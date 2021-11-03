@@ -8,7 +8,7 @@ import { getStrapiMedia } from '../../lib/media';
 
 const Article = ({ article, categories }) => {
 	const imageUrl = getStrapiMedia(article.image);
-
+	
 	const seo = {
 		metaTitle: article.title,
 		metaDescription: article.description,
@@ -52,7 +52,7 @@ const Article = ({ article, categories }) => {
 								<Moment format='MMM Do YYYY'>{article.published_at}</Moment>
 							</p>
 						</div>
-					</div>
+					</div> 
 				</div>
 			</div>
 		</Layout>
